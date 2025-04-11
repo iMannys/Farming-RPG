@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8474917681787984842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da619ff0e70740344b6248e4f9f25b6c, type: 3}
+  m_Name: Spawn Ben
+  m_EditorClassIdentifier: 
+  actionType: 1
+  actorName: Ben
+  position: {x: -1.909, y: -0.739, z: -1.51}
+--- !u!114 &-6477366827701324130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cef07db7d3f48144929458f3ad4b2c4, type: 3}
+  m_Name: Ben Responds to Name
+  m_EditorClassIdentifier: 
+  dialogueLines:
+  - speaker: Uncle Ben
+    message: Nice to meet you, {PlayerName}.
+  - speaker: Uncle Ben
+    message: See you around!
+--- !u!114 &-6049117373483504390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8864175d0e2165b4a8f298ac5cf24ce5, type: 3}
+  m_Name: Scene Change Action
+  m_EditorClassIdentifier: 
+  locationToSwitch: 0
+--- !u!114 &-3743372551965420432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 222877bdfd78d3f4f8463b3b0c377277, type: 3}
+  m_Name: Unlock Character Action
+  m_EditorClassIdentifier: 
+  characterToUnlock: {fileID: 11400000, guid: 5fd9b3543fe35f14ebd5934b8ae7c2b9, type: 2}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5329901dd18f6ea489c9da2803733205, type: 3}
+  m_Name: Introduction
+  m_EditorClassIdentifier: 
+  conditions: []
+  recurring: 0
+  action:
+    m_List:
+    - {fileID: 1782035183503529490}
+    - {fileID: -8474917681787984842}
+    - {fileID: 2423508730804626227}
+    - {fileID: 3596682080911386119}
+    - {fileID: -6477366827701324130}
+    - {fileID: -6049117373483504390}
+    - {fileID: -3743372551965420432}
+--- !u!114 &1782035183503529490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da619ff0e70740344b6248e4f9f25b6c, type: 3}
+  m_Name: Spawn Player
+  m_EditorClassIdentifier: 
+  actionType: 1
+  actorName: Player
+  position: {x: -4.19, y: 1, z: -1.047}
+--- !u!114 &2423508730804626227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cef07db7d3f48144929458f3ad4b2c4, type: 3}
+  m_Name: Ben Introduction
+  m_EditorClassIdentifier: 
+  dialogueLines:
+  - speaker: Ben
+    message: Hi there. Are you the new guy on the farm?
+  - speaker: Ben
+    message: I'm Ben. Nice to meet you.
+  - speaker: Ben
+    message: 'What is your name? '
+--- !u!114 &3596682080911386119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b52e46b4d7db4244aeeba2ebb6c1238, type: 3}
+  m_Name: Naming Action
+  m_EditorClassIdentifier: 
+  namingPrompt: What is your name?
+  blackboardKeyToUpdate: PlayerName

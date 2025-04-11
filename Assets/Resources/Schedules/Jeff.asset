@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9471d49a0919aa945a6d9c4232b73c81, type: 3}
+  m_Name: Jeff
+  m_EditorClassIdentifier: 
+  character: {fileID: 11400000, guid: 3a39fd83861845841a79632155a3b0a3, type: 2}
+  npcScheduleList:
+  - name: Default At Home
+    time:
+      year: 0
+      season: 0
+      day: 0
+      hour: 0
+      minute: 0
+    dayOfTheWeek: 0
+    priority: 0
+    factorDate: 0
+    ignoreDayOfTheWeek: 1
+    location: 2
+    coord: {x: 10, y: 1, z: 6.8}
+    facing: {x: 0, y: 138.7, z: 0}
+  - name: Regular Work Day - Before Work
+    time:
+      year: 0
+      season: 0
+      day: 0
+      hour: 6
+      minute: 0
+    dayOfTheWeek: 0
+    priority: 0
+    factorDate: 0
+    ignoreDayOfTheWeek: 1
+    location: 2
+    coord: {x: 10, y: 1, z: 6.8}
+    facing: {x: 0, y: 0, z: 0}
+  - name: Regular Work Day - Store
+    time:
+      year: 0
+      season: 0
+      day: 0
+      hour: 8
+      minute: 0
+    dayOfTheWeek: 0
+    priority: 0
+    factorDate: 0
+    ignoreDayOfTheWeek: 1
+    location: 2
+    coord: {x: -6.639997, y: 1, z: 22.25}
+    facing: {x: 0, y: 138.7, z: 0}
+  - name: Regular Work Day - After Hours
+    time:
+      year: 0
+      season: 0
+      day: 0
+      hour: 8
+      minute: 0
+    dayOfTheWeek: 0
+    priority: 0
+    factorDate: 0
+    ignoreDayOfTheWeek: 1
+    location: 6
+    coord: {x: 10, y: 1, z: 6.8}
+    facing: {x: 0, y: 138.7, z: 0}
+  - name: Tuesday 8-5
+    time:
+      year: 0
+      season: 0
+      day: 0
+      hour: 8
+      minute: 0
+    dayOfTheWeek: 3
+    priority: 1
+    factorDate: 0
+    ignoreDayOfTheWeek: 0
+    location: 2
+    coord: {x: 10, y: 1, z: 6.8}
+    facing: {x: 0, y: 138.7, z: 0}
+  - name: Sunday 8-5
+    time:
+      year: 0
+      season: 0
+      day: 0
+      hour: 8
+      minute: 0
+    dayOfTheWeek: 3
+    priority: 1
+    factorDate: 0
+    ignoreDayOfTheWeek: 0
+    location: 2
+    coord: {x: 10, y: 1, z: 6.8}
+    facing: {x: 0, y: 138.7, z: 0}

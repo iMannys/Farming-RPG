@@ -1,0 +1,113 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\peter\\Documents\\Unity\\Farming RPG\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7919F09B-2414-C7FD-AB9B-83FFAE49D4A1}|Assembly-CSharp.csproj|c:\\users\\peter\\documents\\unity\\farming rpg\\assets\\scripts\\ui\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7919F09B-2414-C7FD-AB9B-83FFAE49D4A1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7919F09B-2414-C7FD-AB9B-83FFAE49D4A1}|Assembly-CSharp.csproj|C:\\Users\\peter\\Documents\\Unity\\Farming RPG\\assets\\scripts\\ui\\questlistingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7919F09B-2414-C7FD-AB9B-83FFAE49D4A1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\questlistingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7919F09B-2414-C7FD-AB9B-83FFAE49D4A1}|Assembly-CSharp.csproj|C:\\Users\\peter\\Documents\\Unity\\Farming RPG\\assets\\scripts\\events\\gameeventsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7919F09B-2414-C7FD-AB9B-83FFAE49D4A1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\events\\gameeventsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7919F09B-2414-C7FD-AB9B-83FFAE49D4A1}|Assembly-CSharp.csproj|C:\\Users\\peter\\Documents\\Unity\\Farming RPG\\assets\\scripts\\ui\\questlisting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7919F09B-2414-C7FD-AB9B-83FFAE49D4A1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\questlisting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7919F09B-2414-C7FD-AB9B-83FFAE49D4A1}|Assembly-CSharp.csproj|C:\\Users\\peter\\Documents\\Unity\\Farming RPG\\Assets\\Scripts\\UI\\PopUpListingManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7919F09B-2414-C7FD-AB9B-83FFAE49D4A1}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\UI\\PopUpListingManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UIManager.cs",
+              "DocumentMoniker": "C:\\Users\\peter\\Documents\\Unity\\Farming RPG\\Assets\\Scripts\\UI\\UIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\UIManager.cs",
+              "ToolTip": "C:\\Users\\peter\\Documents\\Unity\\Farming RPG\\Assets\\Scripts\\UI\\UIManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\UIManager.cs",
+              "ViewState": "AgIAAJUCAAAAAAAAAAAUwLcCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T12:25:21.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PopUpListingManager.cs",
+              "DocumentMoniker": "C:\\Users\\peter\\Documents\\Unity\\Farming RPG\\Assets\\Scripts\\UI\\PopUpListingManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\PopUpListingManager.cs",
+              "ToolTip": "C:\\Users\\peter\\Documents\\Unity\\Farming RPG\\Assets\\Scripts\\UI\\PopUpListingManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\PopUpListingManager.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwCwAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T12:22:18.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GameEventsManager.cs",
+              "DocumentMoniker": "C:\\Users\\peter\\Documents\\Unity\\Farming RPG\\Assets\\Scripts\\Events\\GameEventsManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Events\\GameEventsManager.cs",
+              "ToolTip": "C:\\Users\\peter\\Documents\\Unity\\Farming RPG\\Assets\\Scripts\\Events\\GameEventsManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Events\\GameEventsManager.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T08:21:37.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "QuestListing.cs",
+              "DocumentMoniker": "C:\\Users\\peter\\Documents\\Unity\\Farming RPG\\Assets\\Scripts\\UI\\QuestListing.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\QuestListing.cs",
+              "ToolTip": "C:\\Users\\peter\\Documents\\Unity\\Farming RPG\\Assets\\Scripts\\UI\\QuestListing.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\QuestListing.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwB4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T06:43:19.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "QuestListingManager.cs",
+              "DocumentMoniker": "C:\\Users\\peter\\Documents\\Unity\\Farming RPG\\Assets\\Scripts\\UI\\QuestListingManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\QuestListingManager.cs",
+              "ToolTip": "C:\\Users\\peter\\Documents\\Unity\\Farming RPG\\Assets\\Scripts\\UI\\QuestListingManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\QuestListingManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T06:27:31.207Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

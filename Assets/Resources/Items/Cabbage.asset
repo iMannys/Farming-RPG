@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68ee97f7b9ad2e042b178db9279a6824, type: 3}
+  m_Name: Cabbage
+  m_EditorClassIdentifier: 
+  itemName: Cabbage
+  description: A leafy green vegetable
+  thumbnail: {fileID: 21300000, guid: ba8860484bdf0c443b3b6ef4f8a42b05, type: 3}
+  gameModel: {fileID: 3911236185542779824, guid: de22b2e6a4844484b90bb595396f42a0, type: 3}
+  cost: 500

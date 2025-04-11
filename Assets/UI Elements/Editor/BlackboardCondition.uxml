@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Elements/Editor/BlackboardConditionStyle.uss?fileID=7433441132597879392&amp;guid=5f501787de909dc45a488036284c38e0&amp;type=3#BlackboardConditionStyle" />
+    <ui:Foldout text="Key Information" name="blackboard-entry-data">
+        <ui:TextField picking-mode="Ignore" label="Key" name="key-name" mask-character="*" />
+        <ui:DropdownField label="Value Type" name="value-type" />
+    </ui:Foldout>
+    <ui:GroupBox name="statement" style="flex-direction: row;">
+        <ui:DropdownField name="comparison" />
+        <ui:GroupBox name="blackboard-entry-value">
+            <ui:IntegerField value="0" name="int-value" class="selected" />
+            <ui:FloatField value="0" name="float-value" />
+            <ui:Toggle name="bool-value" />
+            <ui:TextField picking-mode="Ignore" value="string value" name="string-value" />
+            <ui:Vector3Field name="vector3-value" />
+        </ui:GroupBox>
+    </ui:GroupBox>
+</ui:UXML>

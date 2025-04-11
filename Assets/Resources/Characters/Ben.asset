@@ -1,0 +1,186 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df79fa7bdcd7c0e41bece6ba5517826d, type: 3}
+  m_Name: Ben
+  m_EditorClassIdentifier: 
+  portrait: {fileID: 41038502, guid: 07ae52a1d217b0e40bbb89f75244cdf9, type: 3}
+  birthday:
+    year: 0
+    season: 0
+    day: 5
+    hour: 0
+    minute: 0
+  likes:
+  - {fileID: 11400000, guid: 6e33a10fde8169d4a9efae5808c53f39, type: 2}
+  dislikes:
+  - {fileID: 11400000, guid: 4d3d64cad85aa8840bfb1a2151d02c73, type: 2}
+  prefab: {fileID: 7450170215925983491, guid: d1809b199e6d0c344a9237b69d9e4794, type: 3}
+  onFirstMeet:
+  - speaker: Ben
+    message: Are you the new farmer on the block?
+  - speaker: Ben
+    message: Nice to meet you. I'm Ben. I run a Ranch in this town, so you can visit
+      me for tips on rearing animals!
+  defaultDialogue:
+  - speaker: Ben
+    message: Hey {PlayerName}, how's the farm going?
+  - speaker: Ben
+    message: 'Have a nice day!
+
+'
+  likedGiftDialogue:
+  - speaker: Ben
+    message: I really like this, thanks!
+  dislikedGiftDialogue:
+  - speaker: Ben
+    message: This isn't quite what I like.
+  neutralGiftDialogue:
+  - speaker: Ben
+    message: For me? Don't mind if I do!
+  - speaker: Ben
+    message: For me? Don't mind if I do!
+  birthdayLikedGiftDialogue:
+  - speaker: Ben
+    message: You remembered my birthday! Thank you! I love this!
+  birthdayDislikedGiftDialogue:
+  - speaker: Ben
+    message: For my birthday?
+  - speaker: Ben
+    message: Thanks...?
+  birthdayNeutralGiftDialogue:
+  - speaker: Ben
+    message: A birthday gift! Thanks!
+  dialogues:
+  - id: Forest Dialogue
+    conditions:
+    - blackboardEntryData:
+        keyName: Location
+        valueType: 0
+        intValue: 6
+        floatValue: 0
+        boolValue: 0
+        stringValue: 
+        vector3Value: {x: 0, y: 0, z: 0}
+      comparison: 0
+    dialogueLine:
+    - speaker: Ben
+      message: Mornin! Isn't it a nice day to go fishing?
+  - id: Shop Dialogue
+    conditions:
+    - blackboardEntryData:
+        keyName: Location
+        valueType: 0
+        intValue: 3
+        floatValue: 0
+        boolValue: 0
+        stringValue: 
+        vector3Value: {x: 0, y: 0, z: 0}
+      comparison: 0
+    dialogueLine:
+    - speaker: Ben
+      message: Hey there {PlayerName}, do you love animals? I certainly do.
+    - speaker: Ben
+      message: I'm always happy to help!
+  - id: Shop Friday Dialogue
+    conditions:
+    - blackboardEntryData:
+        keyName: Location
+        valueType: 0
+        intValue: 3
+        floatValue: 0
+        boolValue: 0
+        stringValue: 
+        vector3Value: {x: 0, y: 0, z: 0}
+      comparison: 0
+    - blackboardEntryData:
+        keyName: Timestamp.DayOfWeek
+        valueType: 0
+        intValue: 6
+        floatValue: 0
+        boolValue: 0
+        stringValue: 6
+        vector3Value: {x: 0, y: 0, z: 0}
+      comparison: 0
+    dialogueLine:
+    - speaker: Ben
+      message: Business has been really good tonight. I'm pleased.
+  - id: Shop with 2 Hearts
+    conditions:
+    - blackboardEntryData:
+        keyName: Location
+        valueType: 0
+        intValue: 3
+        floatValue: 0
+        boolValue: 0
+        stringValue: 
+        vector3Value: {x: 0, y: 0, z: 0}
+      comparison: 0
+    - blackboardEntryData:
+        keyName: NPCRelationship_Ben.Hearts
+        valueType: 1
+        intValue: 2
+        floatValue: 0
+        boolValue: 0
+        stringValue: 
+        vector3Value: {x: 0, y: 0, z: 0}
+      comparison: 1
+    dialogueLine:
+    - speaker: Ben
+      message: It's always good to see you!
+  - id: First Animal
+    conditions:
+    - blackboardEntryData:
+        keyName: Location
+        valueType: 0
+        intValue: 3
+        floatValue: 0
+        boolValue: 0
+        stringValue: 
+        vector3Value: {x: 0, y: 0, z: 0}
+      comparison: 0
+    - blackboardEntryData:
+        keyName: AnimalCount
+        valueType: 0
+        intValue: 1
+        floatValue: 0
+        boolValue: 0
+        stringValue: 
+        vector3Value: {x: 0, y: 0, z: 0}
+      comparison: 0
+    dialogueLine:
+    - speaker: Ben
+      message: Take good care of your first animal.
+  - id: Subsequent Animals
+    conditions:
+    - blackboardEntryData:
+        keyName: Location
+        valueType: 0
+        intValue: 3
+        floatValue: 0
+        boolValue: 0
+        stringValue: 
+        vector3Value: {x: 0, y: 0, z: 0}
+      comparison: 0
+    - blackboardEntryData:
+        keyName: AnimalCount
+        valueType: 0
+        intValue: 1
+        floatValue: 0
+        boolValue: 0
+        stringValue: 
+        vector3Value: {x: 0, y: 0, z: 0}
+      comparison: 3
+    dialogueLine:
+    - speaker: Ben
+      message: You have {AnimalCount} animals under your belt.
+    - speaker: Ben
+      message: That number will keep increasing. Keep at it {PlayerName}.

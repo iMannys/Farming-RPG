@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9568f46808ded1b4f82df49bd28c5353, type: 3}
+  m_Name: GettingStartedFarmingQuest
+  m_EditorClassIdentifier: 
+  <id>k__BackingField: GettingStartedFarmingQuest
+  displayName: Getting Started (Farming)
+  description: If you want to become a farmer, you have to start with the basics.
+    Use your hoe to till the soil, then use a seed packet on the tilled soil to sow
+    a crop. Water every day until the crop is ready for harvest.
+  requirements: Cultivate and harvest a cabbage
+  useQuestPoints: 0
+  levelRequirement:
+    type: 5
+    level: 0
+  questPrerequisites: []
+  questStepPrefabs:
+  - {fileID: 4004616379191770346, guid: 13b999eecb8af8a428fb731d60667103, type: 3}
+  goldReward: 100
+  experienceReward: 0

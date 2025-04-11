@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9568f46808ded1b4f82df49bd28c5353, type: 3}
+  m_Name: GettingStartedAnimalsQuest
+  m_EditorClassIdentifier: 
+  <id>k__BackingField: GettingStartedAnimalsQuest
+  displayName: Getting Started (Animals)
+  description: If you want to become a farmer, you have to start with the basics.
+    Buy an egg from Ben's shop, then place it in the incubator inside of your chickencoop
+    and let it hatch. Once finished, feed your chicken each day by placing hay in
+    their troughs. Once they are mature, harvest an egg!
+  requirements: Harvest an egg from your chickens.
+  useQuestPoints: 0
+  levelRequirement:
+    type: 5
+    level: 0
+  questPrerequisites: []
+  questStepPrefabs:
+  - {fileID: 7595216421450935524, guid: a3dfe8a82f230ab489926871739c9c16, type: 3}
+  goldReward: 100
+  experienceReward: 0
