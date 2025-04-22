@@ -98,7 +98,6 @@ public class AnimalStats : MonoBehaviour
             {
                 int amount = -(10 - (animal.friendshipPoints / 200));
                 animal.friendshipPoints += amount;
-                SkillManager.Instance.AddExperience(skill, amount);
             }
 
             //Feeding
@@ -111,7 +110,6 @@ public class AnimalStats : MonoBehaviour
                 int amount = -20;
                 animal.Mood -= 100;
                 animal.friendshipPoints += amount;
-                SkillManager.Instance.AddExperience(skill, amount);
             }
 
             animal.hasTalkedToday = false;

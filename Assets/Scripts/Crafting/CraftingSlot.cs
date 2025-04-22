@@ -37,7 +37,8 @@ public class CraftingSlot : InventorySlot
         UIManager.Instance.IsMainInventory = false;
         UIManager.Instance.IsCraftingInventory = false;
         UIManager.Instance.IsFurnaceInventory = false;
-        originalParent = UIManager.Instance.ItemSlotParent.transform; // Transform is a bit weird when disabled and enabled
+        // Transform is a bit weird when disabled and enabled
+        originalParent = UIManager.Instance.ItemSlotParent.transform; 
         transform.SetParent(originalParent, true);
         transform.SetSiblingIndex(originalSiblingIndex);
         canvasGroup.alpha = 1f;

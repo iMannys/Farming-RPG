@@ -5,7 +5,7 @@ public class InteractEvents
 {
     public event Action<ItemData> onInteract;
 
-    public void StartQuest(ItemData itemData)
+    public void Interact(ItemData itemData)
     {
         if (onInteract != null)
         {

@@ -688,14 +688,12 @@ public class UIManager : MonoBehaviour, ITimeTracker
 
     private void AddPopupMessageToQueue(Sprite icon, string message)
     {
-        GameObject newPopupListing = Instantiate(popUpUIObject, popUplistingGrid.transform) as GameObject;
+        GameObject newPopupListing = Instantiate(popUpUIObject, popUplistingGrid.transform);
         newPopupListing.SetActive(true);
 
         PopUpListing popUpListing = newPopupListing.GetComponent<PopUpListing>();
-
         popUpListing.SetPopupMessage(icon, message);
-
-        Destroy(newPopupListing, messageDisplayDuration);
+        popUpListing.StartFadeAndDestroy(messageDisplayDuration, 0.5f);
     }
 
     public void ShowPopupMessage(IconType iconType, string message)

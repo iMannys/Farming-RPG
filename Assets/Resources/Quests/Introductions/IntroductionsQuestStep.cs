@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class IntroductionsQuestStep : QuestStep
@@ -34,7 +35,15 @@ public class IntroductionsQuestStep : QuestStep
 
             foreach (CharacterData NPCData in characters)
             {
-                RelationshipStats.AddFriendPoints(NPCData, friendPointsReward);
+                try
+                {
+                    RelationshipStats.AddFriendPoints(NPCData, friendPointsReward);
+                } 
+                catch (System.Exception e)
+                {
+                    Debug.LogWarning(e.Message);
+                }
+                
             }
 
             FinishQuestStep();

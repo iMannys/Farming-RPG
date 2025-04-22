@@ -37,13 +37,6 @@ public class Land : MonoBehaviour, ITimeTracker
     //Store the instantiated obstacle as a variable so we can access it
     GameObject obstacleObject;
 
-    AudioManager audioManager;
-
-    private void Awake()
-    {
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
-    }
-
     // Start is called before the first frame update
     void Start()
     {
@@ -220,14 +213,14 @@ public class Land : MonoBehaviour, ITimeTracker
                         UIManager.Instance.ShowPopupMessage(UIManager.IconType.Warning, "This land is blocked by an obstacle!");
                         return;
                     }
-                    audioManager.PlaySFX(audioManager.digging);
+                    AudioManager.Instance.PlaySFX(AudioManager.Instance.digging);
                     SwitchLandStatus(LandStatus.Farmland);
                     break;
                 case EquipmentData.ToolType.WateringCan:
                     //The land must be tilled first
                     if (landStatus != LandStatus.Soil)
                     {
-                        audioManager.PlaySFX(audioManager.watering);
+                        AudioManager.Instance.PlaySFX(AudioManager.Instance.watering);
                         SwitchLandStatus(LandStatus.Watered);
                     }
                     
@@ -244,7 +237,7 @@ public class Land : MonoBehaviour, ITimeTracker
                     //Remove weed obstacle
                     if (obstacleStatus == FarmObstacleStatus.Weeds)
                     {
-                        audioManager.PlaySFX(audioManager.digging);
+                        AudioManager.Instance.PlaySFX(AudioManager.Instance.digging);
                         SetObstacleStatus(FarmObstacleStatus.None);
                     }
                     else if (obstacleStatus != FarmObstacleStatus.None)
@@ -257,7 +250,7 @@ public class Land : MonoBehaviour, ITimeTracker
                     //Remove weed obstacle
                     if (obstacleStatus == FarmObstacleStatus.Wood)
                     {
-                        audioManager.PlaySFX(audioManager.axe);
+                        AudioManager.Instance.PlaySFX(AudioManager.Instance.axe);
                         SetObstacleStatus(FarmObstacleStatus.None);
                     }
                     else if (obstacleStatus != FarmObstacleStatus.None)
@@ -270,7 +263,7 @@ public class Land : MonoBehaviour, ITimeTracker
                     //Remove weed obstacle
                     if (obstacleStatus == FarmObstacleStatus.Rock)
                     {
-                        audioManager.PlaySFX(audioManager.stoneCrack);
+                        AudioManager.Instance.PlaySFX(AudioManager.Instance.stoneCrack);
                         SetObstacleStatus(FarmObstacleStatus.None);
                     }
                     else if (obstacleStatus != FarmObstacleStatus.None)

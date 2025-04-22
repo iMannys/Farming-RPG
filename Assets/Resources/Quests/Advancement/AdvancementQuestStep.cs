@@ -5,9 +5,16 @@ public class AdvancementQuestStep : QuestStep
     public int levelToReach = 1;
     private bool levelGained;
 
-    private void OnEnable()
+    private void Start()
     {
         GameEventsManager.Instance.skillEvents.onLevelChanged += HandleLevelChanged;
+
+        // Check if already at correct level and we missed the event
+        Skill skill = SkillManager.Instance.GetSkill(SkillType.Farming);
+        if (skill.level >= levelToReach)
+        {
+            HandleLevelChanged(skill, skill.level - 1);
+        }
     }
 
     private void OnDisable()

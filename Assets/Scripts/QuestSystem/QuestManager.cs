@@ -90,7 +90,10 @@ public class QuestManager : MonoBehaviour
     {
         foreach(QuestLevel questLevel in currentLevels)
         {
-            questLevel.level = skill.level;
+            if (skill.type == questLevel.type)
+            {
+                questLevel.level = skill.level;
+            }
         }
     }
 
@@ -132,9 +135,9 @@ public class QuestManager : MonoBehaviour
     {
         foreach (Quest quest in questMap.Values)
         {
-            if (quest.state == QuestState.REQUIREMENTS_NOT_MET && CheckRequirementsMet(quest))
+            if ((quest.state == QuestState.REQUIREMENTS_NOT_MET || quest.state == QuestState.CAN_START) && CheckRequirementsMet(quest))
             {
-                ChangeQuestState(quest.info.id, QuestState.CAN_START);
+                ChangeQuestState(quest.info.id, QuestState.IN_PROGRESS);
             }
         }
     }
@@ -179,6 +182,17 @@ public class QuestManager : MonoBehaviour
         Quest quest = GetQuestById(id);
         ClaimRewards(quest);
         ChangeQuestState(quest.info.id, QuestState.FINISHED);
+        foreach (Quest otherQuest in questMap.Values)
+        {
+            if ((otherQuest.state == QuestState.REQUIREMENTS_NOT_MET || otherQuest.state == QuestState.CAN_START)
+                && CheckRequirementsMet(otherQuest))
+            {
+                ChangeQuestState(otherQuest.info.id, QuestState.IN_PROGRESS);
+                otherQuest.InstantiateCurrentQuestStep(this.transform);
+            }
+        }
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.questComplete);
+        UIManager.Instance.ShowPopupMessage(UIManager.IconType.LevelUp, $"You completed the quest {quest.info.displayName}!");
     }
 
     private void ClaimRewards(Quest quest)

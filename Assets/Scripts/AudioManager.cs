@@ -32,6 +32,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip axe;
     public AudioClip stoneCrack;
     public AudioClip newRecord;
+    public AudioClip questComplete;
 
     [Header("---------- Time Reference ----------")]
     private GameTimestamp currentTimestamp => TimeManager.Instance.GetGameTimestamp();
@@ -71,11 +72,11 @@ public class AudioManager : MonoBehaviour
     {
         if (isSleeping) return;
 
-        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.K))
+        /*if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.K))
         {
             UpdateSeasonTracks();
             PlayNextSeasonTrack();
-        }
+        }*/
 
         if (!musicSource.isPlaying)
         {

@@ -20,6 +20,8 @@ public class InteractableObject : MonoBehaviour
 
     public virtual void Pickup()
     {
+        GameEventsManager.Instance.interactEvents.Interact(item);
+
         //Call the OnInteract Callback
         onInteract?.Invoke();
 

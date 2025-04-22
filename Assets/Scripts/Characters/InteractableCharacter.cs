@@ -169,6 +169,8 @@ public class InteractableCharacter : InteractableObject
 
             //Remove the item from the player's hand
             InventoryManager.Instance.ConsumeItem(handSlot);
+
+            GameEventsManager.Instance.characterEvents.CharacterGift(characterData);
         };
 
         //Have the character reset their rotation after the conversation is over

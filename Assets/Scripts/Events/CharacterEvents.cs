@@ -27,6 +27,7 @@ public class CharacterEvents
 
     public void CharacterGift(CharacterData characterData)
     {
+        Debug.Log("CharacterGift event fired!");
         if (onCharacterGift != null)
         {
             onCharacterGift(characterData);

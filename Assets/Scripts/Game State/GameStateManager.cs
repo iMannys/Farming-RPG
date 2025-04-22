@@ -234,7 +234,8 @@ public class GameStateManager : MonoBehaviour, ITimeTracker
         StartCoroutine(TransitionTime());
         //Restore Stamina fully when sleeping
         PlayerStats.RestoreStamina();
-        UIManager.Instance.ShowPopupMessage(UIManager.IconType.StaminaHigh, $"Stamina Restored!");
+        UIManager.Instance.ShowPopupMessage(UIManager.IconType.Info, "Saving Game");
+        UIManager.Instance.ShowPopupMessage(UIManager.IconType.StaminaHigh, "Stamina Restored!");
     }
 
     IEnumerator TransitionTime()

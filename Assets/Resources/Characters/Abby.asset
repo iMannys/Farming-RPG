@@ -115,7 +115,7 @@ MonoBehaviour:
         keyName: NPCRelationship_Abby.Hearts
         valueType: 1
         intValue: 2
-        floatValue: 0
+        floatValue: 2
         boolValue: 0
         stringValue: 
         vector3Value: {x: 0, y: 0, z: 0}

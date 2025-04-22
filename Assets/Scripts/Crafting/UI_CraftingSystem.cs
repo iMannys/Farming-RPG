@@ -49,10 +49,6 @@ public class UI_CraftingSystem : MonoBehaviour
             CraftingSlot slot = gridContainer.GetChild(i).GetComponentInChildren<CraftingSlot>();
             slot.AssignIndex(i);
         }
-
-        //CreateItem(0, 0, new Item { itemType = Item.ItemType.Diamond });
-        //CreateItem(1, 2, new Item { itemType = Item.ItemType.Wood });
-        //CreateItemOutput(new Item { itemType = Item.ItemType.Sword_Wood });
     }
 
     public void SetCraftingSystem(CraftingSystem craftingSystem)

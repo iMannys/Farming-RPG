@@ -59,7 +59,7 @@ public class PlayerStats
 
     public static void InitializeStats(GameTimestamp timestamp)
     {
-        if (timestamp.year == 0 && timestamp.season == GameTimestamp.Season.Spring && timestamp.day == 1)
+        if (timestamp.year == 0 && timestamp.season == GameTimestamp.Season.Spring && timestamp.day <= 1)
         {
             Money = 500;
         }

@@ -15,8 +15,18 @@ public class HowToWinFriendsQuestStep : QuestStep
         GameEventsManager.Instance.characterEvents.onCharacterGift -= HandleCharacterGift;
     }
 
+    private void Start()
+    {
+        if (hasGiftedCharacter)
+        {
+            FinishQuestStep();
+        }
+    }
+
     private void HandleCharacterGift(CharacterData characterData)
     {
+        Debug.Log($"Gifted a character");
+
         if (!hasGiftedCharacter)
         {
             hasGiftedCharacter = true;

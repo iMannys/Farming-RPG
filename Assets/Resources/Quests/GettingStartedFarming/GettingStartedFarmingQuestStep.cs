@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class GettingStartedFarmingQuestStep : QuestStep
 {
-    private bool cabbageHarvested;
+    private bool cabbageHarvested = false;
 
     private void OnEnable()
     {
@@ -16,6 +16,7 @@ public class GettingStartedFarmingQuestStep : QuestStep
 
     private void HandleInteract(ItemData itemData)
     {
+        Debug.Log(itemData.itemName);
         if (!cabbageHarvested)
         {
             if (itemData.itemName == "Cabbage")

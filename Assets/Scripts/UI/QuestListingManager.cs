@@ -41,7 +41,6 @@ public class QuestListingManager : MonoBehaviour
 
     private void QuestStateChange(Quest quest)
     {
-        if (QuestExistsInList(quest) != false) return;
         if (quest.state != QuestState.IN_PROGRESS)
         {
             foreach (Transform questUI in listingGrid.transform)
@@ -51,12 +50,13 @@ public class QuestListingManager : MonoBehaviour
                 {
                     if (uiListing.questInfo.id == quest.info.id)
                     {
-                        Destroy(uiListing);
+                        Destroy(uiListing.gameObject);
                     }
                 }
             }
             return;
         }
+        if (QuestExistsInList(quest) != false) return;
 
         GameObject newQuestUI = Instantiate(questUIObject, listingGrid.transform) as GameObject;
         newQuestUI.SetActive(true);

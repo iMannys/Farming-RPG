@@ -45,3 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charactersToGreet: 4
+  friendPointsReward: 100
