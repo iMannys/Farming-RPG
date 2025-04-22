@@ -127,10 +127,10 @@ public class DialogueManager : MonoBehaviour
 
         //Set the dialogue text to the message
         //dialogueText.text = message;
-        StartCoroutine(TypeText(message));
+        StartCoroutine(TypeText(message, speaker));
     }
 
-    IEnumerator TypeText(string textToType)
+    IEnumerator TypeText(string textToType, string currentSpeaker)
     {
         isTyping = true;
         //Convert the string to an array of chars
@@ -138,6 +138,19 @@ public class DialogueManager : MonoBehaviour
         for(int i =0; i < charsToType.Length; i++)
         {
             dialogueText.text += charsToType[i];
+
+            float pitch = 1f;
+            switch (currentSpeaker)
+            {
+                case "Jeff": pitch = 0.8f; break;
+                case "Ben": pitch = 1f; break;
+                case "Frank": pitch = 0.6f; break;
+                case "Abby": pitch = 1.2f; break;
+                default: pitch = 1f; break;
+            }
+
+            AudioManager.Instance.PlaySFXWithPitch(AudioManager.Instance.npcSpeak, pitch);
+
             yield return new WaitForEndOfFrame();
 
             //Skip the typing sequence and just show the full text

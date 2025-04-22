@@ -33,6 +33,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip stoneCrack;
     public AudioClip newRecord;
     public AudioClip questComplete;
+    public AudioClip npcSpeak;
 
     [Header("---------- Time Reference ----------")]
     private GameTimestamp currentTimestamp => TimeManager.Instance.GetGameTimestamp();
@@ -157,6 +158,13 @@ public class AudioManager : MonoBehaviour
 
     public void PlaySFX(AudioClip clip)
     {
+        SFXSource.pitch = 1f;
+        SFXSource.PlayOneShot(clip);
+    }
+
+    public void PlaySFXWithPitch(AudioClip clip, float pitch)
+    {
+        SFXSource.pitch = pitch;
         SFXSource.PlayOneShot(clip);
     }
 }

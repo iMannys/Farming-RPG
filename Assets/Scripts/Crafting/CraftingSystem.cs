@@ -51,14 +51,14 @@ public class CraftingSystem
         recipe[0, 0] = "Egg"; recipe[1, 0] = string.Empty; recipe[2, 0] = string.Empty;
         recipe[0, 1] = string.Empty; recipe[1, 1] = string.Empty; recipe[2, 1] = string.Empty;
         recipe[0, 2] = string.Empty; recipe[1, 2] = string.Empty; recipe[2, 2] = string.Empty;
-        recipeDictionary[new CraftingRecipeResult("Pumpkin", 10)] = recipe;
+        recipeDictionary[new CraftingRecipeResult("Pumpkin", 15)] = recipe;
 
         // RecipeNameHere
         recipe = new string[grid_size, grid_size];
         recipe[0, 0] = "Pumpkin"; recipe[1, 0] = string.Empty; recipe[2, 0] = string.Empty;
         recipe[0, 1] = "Egg"; recipe[1, 1] = string.Empty; recipe[2, 1] = string.Empty;
         recipe[0, 2] = string.Empty; recipe[1, 2] = string.Empty; recipe[2, 2] = string.Empty;
-        recipeDictionary[new CraftingRecipeResult("Sandwich", 50)] = recipe;
+        recipeDictionary[new CraftingRecipeResult("Sandwich", 25)] = recipe;
 
     }
 

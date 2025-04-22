@@ -39,8 +39,8 @@ public class FurnaceSystem
     {
         recipeDictionary = new FurnaceRecipe[] // List of recipe items
         {
-            new("Wheat", "Bread", 30, 3, 50),
-            new("Pumpkin", "Bowl of Soup", 5, 1, 100)
+            new("Wheat", "Bread", 30, 3, 15),
+            new("Pumpkin", "Bowl of Soup", 5, 1, 25)
         };
         fuelItems = new string[] // List of fuel items
         {

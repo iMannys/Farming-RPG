@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Tomato Seeds
   m_EditorClassIdentifier: 
   itemName: 
-  description: Seeds to grow tomatos
+  description: 'Seeds to grow tomatos: Takes 9 days to grow (Can regrow after 3 days)'
   thumbnail: {fileID: 21300000, guid: 5e1f813afec58ac46aa736bb32b7eb7e, type: 3}
   gameModel: {fileID: 0}
   cost: 150

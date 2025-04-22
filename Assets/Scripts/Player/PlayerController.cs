@@ -54,7 +54,7 @@ public class PlayerController : MonoBehaviour
 
         //Debugging purposes only
         //Skip the time when the right square bracket is press
-        if (Input.GetKey(KeyCode.P))
+        /*if (Input.GetKey(KeyCode.P))
         {
             if (Input.GetKey(KeyCode.LeftShift)) {
                 //Advance the entire day
@@ -68,7 +68,7 @@ public class PlayerController : MonoBehaviour
             }
 
 
-        }
+        }*/
         /*
         //Toggle relationship panel
         if (Input.GetKeyDown(KeyCode.R))
@@ -114,9 +114,9 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             
-            Skill skill = SkillManager.Instance.GetSkill(SkillType.Farming);
+            /*Skill skill = SkillManager.Instance.GetSkill(SkillType.Farming);
 
-            SkillManager.Instance.AddExperience(skill, 100);
+            SkillManager.Instance.AddExperience(skill, 100);*/
 
             //Interact
             playerInteraction.Interact();
